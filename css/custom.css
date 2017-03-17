@@ -1,0 +1,230 @@
+/* fffffffffffffffff FONTS ffffffffffffffffff*/
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: 
+	url(../fonts/lato/Lato-Light.ttf),
+	url(../fonts/lato/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Old Standard TT';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Old Standard TT Regular'), local('OldStandardTT-Regular'), url(https://fonts.gstatic.com/s/oldstandardtt/v7/n6RTCDcIPWSE8UNBa4k-DG75SyxP8F_Nt1CRRMel2UU.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* ========================= GENERAL ========================== */
+body {
+	background-color: RGB(61,33,30);
+	/*color: RGB(238,204,146);*/
+	color: RGB(228,244,226);
+	line-height: 1.4;
+	font-family: 'Lato', sans-serif;
+	/*font-size: 100%;*/
+}
+h1, h2, h3 {
+	font-family: 'Old Standard TT', serif;
+}
+blockquote {
+	font-size: 16px;
+	border-left: 3px solid RGB(227,143,71);
+}
+p {
+	-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.anchorInsidePage {
+width: 0;
+height: 0;
+padding: 0;
+margin: 0;
+-webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+border: none;
+display: none;
+display: block !important;
+}
+
+.padding-destroy {
+	padding: 0px !important;
+}
+
+/* <><><><><><><><><><><><> NAV <><><><><><><><><><><><>*/
+
+nav.navbar, footer {
+	background-color: RGBA(227,143,71, 0.9);
+	border: none;
+}
+nav.navbar a {
+	color: RGB(250,250,250) !important;
+}
+nav.navbar a:hover, nav.navbar  li.active {
+	background-color: RGB(61,33,30) !important;
+}
+
+
+/* <><><><><><><><><><><><> COVER PHOTO <><><><><><><><><><><><>*/
+.imageWraper {
+	width: 500px;
+	height: 730px;
+	padding: 20px;
+	/*outline: 1px dashed green;*/
+	background-color: RGB(20,20,20);
+}
+
+.imageWraper img {
+	width:100%;
+}
+
+/* <><><><><><><><><><><><> Rights side <><><><><><><><><><><><>*/
+
+#quoteReference {
+	margin: 30px 0 0 0;
+}
+
+section.col-md-6 h1 {
+	text-transform: uppercase !important;
+	letter-spacing: 5px;
+	margin-top: 40px;
+}
+section.col-md-6 h2 {
+	margin-top: 10px;
+}
+
+blockquote small {
+	color: RGB(228,244,226);
+	display: inline;
+}
+
+/* ------  FORM --------*/
+.form-group {
+	margin-top: 70px;
+}
+.form-group input {
+	margin-top: 20px;
+	/*outline: 1px dotted black;*/
+	border: 3px solid RGB(227,143,71);
+	height: 50px;
+	color: RGB(227,143,71);
+}
+
+/*--------- PRICE section ---------*/
+#PriceSection {
+	margin-top: 40px;
+}
+#PriceSection button {
+	padding: 0 !important;
+	border: 3px solid RGB(228,244,226);
+	background-color: transparent;
+	width: 100%;
+	height: 50px;
+	font-size: 2rem;
+	text-align: center;
+	
+}
+#PriceSection button  a {
+	color: RGB(228,244,226);
+}
+#PriceSection button:hover {
+	border: 3px solid RGB(227,143,71);
+}
+
+#PriceSection .PriceAfter, #PriceSection .PriceBefore {
+	font-size: 40px;
+	display: inline-block;
+}
+#PriceSection .PriceAfter {
+	text-align: left;
+}
+#PriceSection .PriceBefore {
+	text-align: right;
+	color: RGB(227,143,71);
+	text-decoration: line-through;
+}
+
+/* <><><><><><><><><><><><> Tabs <><><><><><><><><><><><>*/
+.tabbs {
+	padding: 3% 12%;
+	
+}
+.tabbs blockquote, .tabbs p, .tabbs li {
+	font-size: 18px;
+	margin-top: 25px;
+}
+.tabbs .item {
+	min-height: 250px;
+}
+
+/*  ACCORDION  */
+
+div[role="tabpanel"] h4  {
+	margin-top: 30px;
+}
+div[role="tabpanel"]  {
+	min-height: 350px;
+}
+
+.tabbs ul li {
+	list-style: square;
+}
+.nav-tabs {
+	border-bottom: 1px solid RGB(228,244,226);
+}
+
+.nav-tabs li a{
+	border: 3px solid RGB(228,244,226);
+	border-radius: 0px;
+	color:RGB(228,244,226); 
+}
+
+.nav-tabs li a:hover {
+	border: 3px solid RGB(227,143,71);
+	background-color: transparent;
+}
+.nav-tabs li.active a, .nav-tabs li.active a:focus {
+	background-color: transparent;
+	border: 3px solid RGB(227,143,71);
+}
+[role="tooltip"] {
+    display: none;
+    padding: 0.25em;
+    margin: 0;
+    color: #fff;
+    background: #EF8100;
+    width: 100%;
+    z-index: 100;
+}
+
+input:focus + [role="tooltip"] {
+    display: inline-block;
+    /*position: absolute;
+    top: 100%;*/
+}
+
+/* ==================================   FOOTER  ======================================== */
+footer {
+    margin-top: 5%;
+    padding-top: 10px;
+	padding: 15px;
+    border-top: 2px solid rgb(200,200,200);
+}
+footer .right-align  {
+	text-align: right;
+}
+footer .right-align a {
+	color: white;
+	font-size: 1.1em;
+}
+
+
+
+
+
